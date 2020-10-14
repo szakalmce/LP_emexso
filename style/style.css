@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
+
+body {
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+   margin: 0;
+}
+:root {
+   --main-color: #ff5740;
+}
+ 
+
+
 .icon::before {
    display: inline-block;
    font-style: normal;
@@ -15,19 +30,19 @@
  }
 
  .fb::before {
-   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f39e";
+   font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f39e";
  }
 
  .linkedin::before {
-   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e1";
+   font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f0e1";
  }
 
  .insta::before {
-   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f16d";
+   font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f16d";
  }
 
  .twitter::before {
-   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f099";
+   font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f081";
  }
 
  /****** NAVBAR *************************************************************************/
@@ -35,6 +50,8 @@
  .up__navbar {
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0, .1);
  }
 
  .up__navbar__details {
@@ -47,19 +64,88 @@
  .up__navbar__details__email {
     display: flex;
     padding: 0 10px;
+    font-weight: bold;
  }
+
+ .up__navbar__details__tel span,
+ .up__navbar__details__email span {
+   color: var(--main-color);
+   padding-right: 10px;
+ }
+
+.up__navbar__social {
+   display: flex;
+   align-items: center;
+
+}
 
  .up__navbar__social ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
  }
 
  .up__navbar__social ul li {
     display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--main-color);
+    line-height: 40px;
+    text-align: center;
+    margin: 0px 5px;
+    border-radius: 3px;
+    transition: all 250ms ease-in-out;
+ }
+
+ .up__navbar__social ul li a {
+   display: block;
+ }
+
+ .up__navbar__social ul li:hover {
+    background-color: var(--main-color)
  }
 
  .up__navbar__social ul li a span {
     color: red;
+ }
+
+ .up__navbar__social ul li:hover a span {
+    color: white;
+ }
+
+ .navbar {
+    background-color: white;
+    margin-top: 10px;
+ }
+
+ .nav-item {
+   margin: 0 10px;
+   color: #000;   
+ }
+
+ .nav-link {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    transition: all 250ms ease-in-out;
+ }
+
+ .nav-link:hover {
+    color: var(--main-color);
+ }
+
+ .btn-custom {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+
+ .btn-custom:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
  }
 
