@@ -72,6 +72,10 @@ p {
    font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f081";
  }
 
+ .check::before {
+   font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f00c";
+ }
+
  /****** NAVBAR *************************************************************************/
 
  .up__navbar {
@@ -265,5 +269,26 @@ p {
    padding: 10px 0;
    font-size: 1.1rem;
    color: var(--font-color);
-   }  
+   }
+
+   .about__inner__text__list {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .fa-ul {
+      margin-left: 1.5em !important;
+   }
+
+   .about-arrow li {
+      margin: 15px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+   }
+
+   .about-arrow li span {
+      color: var(--main-color);
+   }
 
