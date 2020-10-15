@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;700&display=swap');
 
 body {
    font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
+   font-family: 'Barlow', sans-serif;
    margin: 0;
 }
 :root {
    --main-color: #ff5740;
+   --second-color: #fbd7b5;
+   --font-color: #0c2461;
 }
  
 
@@ -149,3 +153,61 @@ p {
     color: var(--main-color);
  }
 
+  /****** HEADER *************************************************************************/
+
+  .header {
+     background-color: var(--second-color);
+     height: calc(100vh - 157px);
+     display: flex;
+     align-items: center;
+  }
+
+  .header__inner__text {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+  }
+
+  .header__inner__text h5 {
+     font-weight: bold;
+     text-transform: uppercase;
+     color: var(--main-color);
+  }
+
+  .header__inner__text h1 {
+     font-size: 4rem;
+     font-weight: bold;
+     color: var(--font-color);
+  }
+
+  .header__inner__text p {
+     color: var(--font-color);
+     font-size: 1.2rem;
+     padding: 20px 0;
+  }
+
+  .header__inner__text hgroup {
+     display: flex;
+     align-items: center;
+  }
+
+  .header__inner__text hgroup button {
+     font-size: 1.2rem;
+  }
+
+  .header__inner__text hgroup .btn-custom-header:hover {
+      background-color: var(--main-color);
+      color: white;
+  }
+
+  .header__inner__text hgroup i {
+     margin: 0;
+     padding: 0;
+  }
+
+  .header__inner__text hgroup h3 {
+     color: var(--font-color);
+     margin: 0;
+     font-weight: bold;
+     margin-left: 1rem;
+  }
