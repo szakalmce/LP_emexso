@@ -344,3 +344,56 @@ p {
      text-align: justify;
      line-height: 1.8;
   }
+
+    /****** DEMO *************************************************************************/
+
+    .demo__inner__video__wrapper {
+       position: relative;
+    }
+
+   .demo__inner__video__wrapper img {
+      border-radius: 50px;
+   }
+
+   
+   
+   .video__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+      width: 100px;
+      height: 100px;
+      background-color: var(--main-color);
+      border-radius: 50%;
+      cursor: pointer;
+      animation: youtube 3s linear infinite;
+   }
+
+   .video__icon i {
+      text-align: center;
+      line-height: 100px;
+      display: block;
+      font-size: 2rem;
+      background-color: transparent;
+
+   }
+   
+   
+
+
+   @keyframes youtube {
+      0% {
+         box-shadow: 0 0 0 0 rgba(var(--main-color),.7);
+      }
+      40% {
+         box-shadow: 0 0 0 50px rgba(var(--main-color),0);
+      }
+      80% {
+         box-shadow: 0 0 0 50px rgba(var(--main-color),0);
+      }
+      100% {
+         box-shadow: 0 0 0 0 rgba(var(--main-color),0);
+      }
+   }
