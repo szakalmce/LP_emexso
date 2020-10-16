@@ -400,12 +400,86 @@ p {
    background-color: var(--bg-color)
 }
 
+/****** TESTIOMONIALS *************************************************************************/
+
 .item {
    border: 5px solid rgba(0,0,0, .1);
    margin: 0 10px;
    border-radius: 20px;
+   text-align: center;
+   padding: 40px 10px;
 }
+
+.item .quote {
+   color: var(--main-color);
+   font-size: 2.5rem;
+}
+
+.item p {
+   color: var(--font-color);
+   font-weight: 300;
+   padding: 1rem 0;
+}
+
+.item ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.item ul li {
+   display: inline-block;
+   padding: 1rem 0;
+}
+
+.item ul li i {
+   color: #f0932b;
+}
+
+.item-img {
+   width: 50%;
+   padding: 1rem 0;
+}
+
+.item-img img {
+   border-radius: 50%;
+   align-self: center;
+
+}
+
+.item hgroup {
+   color: var(--font-color)
+}
+
+.item hgroup h2 {
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+}
+
+
 
 .item .col-md-4 {
    max-width: 100%;
 }
+
+.owl-dot:focus {
+   outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot.focus span,
+.owl-theme .owl-dots .owl-dot:hover span {
+   background-color: var(--main-color);
+   width: 20px;
+   height: 20px;
+   outline: none;
+   border: none;
+   box-shadow: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+   width: 20px;
+   height: 20px;
+}
+
