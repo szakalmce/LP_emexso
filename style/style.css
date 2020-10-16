@@ -682,7 +682,7 @@ p {
    display: inline-block;
    padding: 20px;
    border-radius: 3px;
-   margin-right: 20px;
+   margin-right: 30px;
 }
 
 .mark__icon i {
@@ -690,3 +690,41 @@ p {
    color: var(--main-color);
 }
 
+.mark__text h3 {
+   font-weight: bold;
+   color: var(--font-color);
+   margin: 0;
+}
+
+.mark__text p {
+   color: var(--font-color);
+   font-size: 1.1rem;
+}
+
+/****** CONTACT *************************************************************************/
+
+.contact__form .form-group {
+   margin-bottom: 0rem;
+}
+
+.contact__form label {
+   color: var(--font-color);
+   font-weight: bold;
+}
+
+.contact__form input,
+.contact__form textarea {
+   border: 1px solid rgba(0,0,0, .1);
+   color: var(--font-color);
+   padding: 10px;
+   border-radius: 0;
+   outline: none;
+}
+
+input:focus {
+   outline: none;
+}
+
+.contact__form span {
+   display: inline-block;
+}
