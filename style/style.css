@@ -610,7 +610,7 @@ p {
    position: relative;
    margin: 0;
    padding: 0;
-   border: 2px solid rgba(0, 0, 0, .1);
+   border: 1px solid rgba(0, 0, 0, .1);
    padding: 0 20px;
    border-right: 0;
    z-index: 0;
@@ -625,11 +625,68 @@ p {
    margin-left: -5px;
    border-radius: 0;
    width: 20%;
-   margin-top: -2px;
+
    z-index: 99999;
+   position: absolute;
+}
+
+.btn-fill {
+   border: 0;
 }
 
 .btn-fill:hover {
    background-color: var(--main-color);
    color: white;
+   border: 0;
 }
+
+/****** WHY *************************************************************************/
+
+.why__item {
+   display: flex;
+   margin-bottom: .75rem;
+}
+
+.why__item:last-child {
+   margin-bottom: 0rem;
+}
+
+.why__item i {
+   display: block;
+   padding-right: 2rem;
+   font-size: 1.8rem;
+   color:var(--main-color);
+}
+
+.why__item h4 {
+   color: var(--font-color);
+   font-weight: bold;
+   font-size: 1.4rem;
+   line-height: 1.7;
+   padding-right: 20px;
+}
+
+/****** MARK *************************************************************************/
+
+.mark {
+   background-color: var(--bg-color);
+}
+
+.mark__inner__item {
+   display: flex;
+   align-items: center;
+}
+
+.mark__icon {
+   background-color: white;
+   display: inline-block;
+   padding: 20px;
+   border-radius: 3px;
+   margin-right: 20px;
+}
+
+.mark__icon i {
+   font-size: 2rem;
+   color: var(--main-color);
+}
+
