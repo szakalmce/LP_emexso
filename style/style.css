@@ -728,3 +728,154 @@ input:focus {
 .contact__form span {
    display: inline-block;
 }
+
+.contact__details {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.contact__details__item {
+   margin-bottom: 2rem;
+}
+
+.contact__details__item__h {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+   color: var(--font-color);
+}
+
+.contact__details__item__h i {
+   color: var(--main-color);
+   margin-right: 10px;
+}
+
+.contact__details__item__h h5 {
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+}
+
+.contact__details__item__i {
+   color: var(--font-color);
+   font-size: 1.1rem;
+}
+
+/****** FOOTER *************************************************************************/
+
+.footer {
+   background-color: var(--bg-color);
+   padding: 3rem 0;
+}
+
+.footer__inner__logo img {
+   margin-bottom: 1rem;
+}
+
+.footer__inner__logo h5 {
+   color: var(--font-color);
+}
+
+.footer__inner__list ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.footer__inner__list ul li {
+   padding: 7px 0;
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+.footer__inner__list ul li a {
+   color: var(--font-color)
+}
+
+.footer__inner__list ul li a:hover {
+   text-decoration: none;
+}
+
+.footer__input {
+   width: 100%;
+   margin-bottom: 2rem;
+}
+
+.footer__input input {
+   width: 100%;
+   padding: 20px;
+   padding-right: 150px;
+   border-radius: 30px;
+   position: relative;
+   border: 0;
+}
+
+.footer__input button {
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   border-radius: 30px;
+}
+
+.footer__social h6 {
+   font-size: 1.3rem;
+   font-weight: bold;
+   color: var(--font-color);
+   margin-bottom: 1rem;
+}
+
+.footer__social ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.footer__social ul li {
+   display: inline-block;
+   margin: 0 5px;
+}
+
+.footer__social ul li:first-child {
+   display: inline-block;
+   margin-left: 0;
+}
+
+
+.footer__social ul li a {
+   display: block;
+   background-color: white;
+   width: 48px;
+   height: 48px;
+   text-align: center;
+   font-size: 1.3rem;
+   line-height: 48px;
+   border-radius: 50%;
+   color: black;
+   transition: all 250ms ease-in-out;
+}
+
+.footer__social ul li a:hover {
+   color: var(--font-color);
+}
+
+.hr-line {
+   width: 100%;
+   height: 1px;
+   display: block;
+   background-color: rgba(0, 0, 0, .1);
+   text-align: center;
+}
+
+.footer__copy h5 {
+   font-weight: bold;
+}
+
+.footer__copy a {
+   color: var(--main-color)
+}
+
+.footer__copy a:hover {
+   text-decoration: none;
+}
