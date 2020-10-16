@@ -500,11 +500,13 @@ p {
    text-align: center;
 }
 
-.owl-item:hover img {
+.owl-custom:hover img {
    transform: scale(1.1);
 }
 
-.owl-item img {
+
+
+.owl-custom img {
    width: 60% !important;
    margin: 0 auto;
    padding-bottom: 3rem;
@@ -536,4 +538,41 @@ p {
    font-size: 1.5rem;
    font-weight: bold;
    color: var(--font-color)
+}
+
+.owl-nav {
+   padding-top: 2rem;
+}
+
+.owl-nav button:focus {
+   outline: none;
+}
+
+.owl-nav button {
+   transition: all 250ms ease-in-out;
+}
+
+.owl-prev i,
+.owl-next i {
+   font-size: 1.5rem;
+   padding: 15px 15px;
+   color: var(--main-color)
+}
+
+.owl-prev:hover i,
+.owl-next:hover i {
+   font-size: 1.5rem;
+   padding: 15px 15px;
+   color: white;
+}
+
+.owl-prev,
+.owl-next {
+   background-color: white !important;
+}
+
+
+.owl-prev:hover,
+.owl-next:hover {
+   background-color: var(--main-color) !important;
 }
