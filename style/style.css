@@ -463,6 +463,10 @@ p {
    max-width: 100%;
 }
 
+.owl-dots {
+   padding-top: 1rem;
+}
+
 .owl-dot:focus {
    outline: none;
 }
@@ -483,3 +487,53 @@ p {
    height: 20px;
 }
 
+/****** PRODUCTS *************************************************************************/
+
+.products {
+   background-color: var(--bg-color)
+}
+
+.owl-item {
+   border-radius: 20px;
+   background-color: white;
+   padding: 40px 10px;
+   text-align: center;
+}
+
+.owl-item:hover img {
+   transform: scale(1.1);
+}
+
+.owl-item img {
+   width: 60% !important;
+   margin: 0 auto;
+   padding-bottom: 3rem;
+   transition: all 250ms ease-in-out;
+}
+
+.owl-item h2 {
+   color: var(--font-color);
+   font-weight: bold;
+}
+
+.owl-item ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.owl-item ul li {
+   display: inline-block;
+   padding: 0 3px;
+}
+
+.owl-item ul li i {
+   color: #f0932b;
+}
+
+.owl-item h5 {
+   padding: 1rem 0;
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: var(--font-color)
+}
