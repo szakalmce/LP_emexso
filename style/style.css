@@ -576,3 +576,60 @@ p {
 .owl-next:hover {
    background-color: var(--main-color) !important;
 }
+
+
+/****** QUESTIONS *************************************************************************/
+
+.questions__inner__item {
+   color: var(--font-color)
+}
+
+.questions__inner__item h3 {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+/****** QUESTIONS *************************************************************************/
+
+.newsletter {
+   background-color: var(--bg-color)
+}
+
+.newsletter__inner {
+   width: 100%;
+}
+
+.newsletter__inner form {
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.newsletter__inner form input {
+   width: 80%;
+   height: 60px;
+   position: relative;
+   margin: 0;
+   padding: 0;
+   border: 2px solid rgba(0, 0, 0, .1);
+   padding: 0 20px;
+   border-right: 0;
+   z-index: 0;
+}
+
+.newsletter__inner form input:focus {
+   outline: none;
+}
+
+.newsletter__inner form button {
+   height: 60px;
+   margin-left: -5px;
+   border-radius: 0;
+   width: 20%;
+   margin-top: -2px;
+   z-index: 99999;
+}
+
+.btn-fill:hover {
+   background-color: var(--main-color);
+   color: white;
+}
