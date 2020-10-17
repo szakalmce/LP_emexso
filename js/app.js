@@ -8,8 +8,13 @@ $(document).ready(function () {
             0:{
                 items:1
             },
-            600:{
-                items:2
+            700:{
+                items: 1,
+                margin: 60,
+            },
+            767: {
+                items: 2,
+                margin: 0,
             },
             1000:{
                 items:3
@@ -27,8 +32,13 @@ $(document).ready(function () {
             0:{
                 items:1
             },
-            600:{
-                items:2
+            700:{
+                items: 1,
+                margin: 60,
+            },
+            767: {
+                items: 2,
+                margin: 0,
             },
             1000:{
                 items:3

@@ -8,6 +8,8 @@
    }
 }
 
+/* *********************** */
+
 @media (max-width: 991px) {
 
  h2 {
@@ -75,5 +77,126 @@
 
    .test__inner h5 {
       font-size: 1rem;
+   }
+
+   /* WHY */
+   .why__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   /* MARK */
+
+   .mark__icon {
+      margin: 0;
+      margin-right: 1rem;
+   }
+}
+
+
+@media (max-width: 767px) {
+   .up__navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   
+   .up__navbar__details {
+      margin-bottom: 1rem;
+   }
+
+   /* HEADER */
+
+   .header__inner__img {
+      padding-top: 3.5rem;
+
+   }
+
+   .header {
+      height: 100%;
+      text-align: center;
+   }
+
+   .header__inner__text hgroup {
+      margin: 0 auto;
+   }
+
+   /* FEATURES */
+
+   .features .title {
+      text-align: center !important;
+   }
+
+   .features__inner__item hgroup {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .features__inner__item hgroup i {
+      margin-bottom: .5rem;
+   }
+
+   .features__inner__item p {
+      text-align: center;
+   }
+
+   /* DEMO */
+
+   .offer .title {
+      text-align: center !important;
+      margin-bottom: 1rem;
+   }
+
+   /* PRODUCTS */
+
+   .owl-custom img{
+      width: 40% !important;
+   }
+
+   /* WHY */
+
+   .why__inner__img {
+      margin-bottom: 2rem;
+   }
+
+   /* MARK */
+
+   .mark__inner__item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 2rem;
+   }
+
+   .mark__icon {
+      margin: 0;
+      margin-bottom: 1rem;
+   }
+
+   /* CONTACT */
+
+   .contact__details {
+      margin-top: 4rem;
+   }
+
+   /* FOOTER */
+
+   .footer__inner > div {
+      margin-bottom: 1.5rem;
+   }
+
+   .footer__copy h5 {
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 576px) {
+   .up__navbar__details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
 }

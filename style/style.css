@@ -165,7 +165,7 @@ p {
 }
 
 .up__navbar__social ul li a span {
-   color: red;
+   color: var(--main-color);
 }
 
 .up__navbar__social ul li:hover a span {
