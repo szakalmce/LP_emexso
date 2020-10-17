@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+   .container {
+      width: 100%;
+   }
+   .owl-carousel .item {
+      min-height: 600px;
+      margin: 0;
+   }
+}
+
+@media (max-width: 991px) {
+
+   /* NAVBAR */
+
+   .navbar-toggler i {
+      color: white;
+      background-color: var(--main-color);
+      padding: 10px 15px;
+      border-radius: 3px;
+   }
+
+   .navbar-toggler:focus {
+      outline: none;
+   }
+
+   .navbar-nav {
+      text-align: center;
+   }
+
+   .btn-navbar {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      display: none;
+   }
+
+   .btn-navbar .d-block {
+      display: block;
+   }
+
+   /* HEADER */
+
+   .header__inner__text h1 {
+      font-size: 2rem;
+   }
+
+
+}

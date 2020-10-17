@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.owl-one').owlCarousel({
         loop:true,
-        margin:10,
+        margin:5,
         nav: false,
         autoplay: true,
         responsive:{
@@ -36,4 +36,17 @@ $(document).ready(function () {
         }
     })
 })
+
+// NAVBAR
+
+    // btn visibility
+
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarBtn = document.querySelector('.btn-navbar')
+
+
+navbarToggler.addEventListener('click', () => {
+    navbarBtn.classList.toggle('d-block');
+})
+
 
