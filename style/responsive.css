@@ -10,6 +10,10 @@
 
 @media (max-width: 991px) {
 
+ h2 {
+    font-size: 2.5rem !important;
+ }
+
    /* NAVBAR */
 
    .navbar-toggler i {
@@ -40,8 +44,36 @@
    /* HEADER */
 
    .header__inner__text h1 {
-      font-size: 2rem;
+      font-size: 3rem;
    }
 
+   .header {
+      height: calc(90vh - 157px);
+   }
 
+   /* FEATURES */
+
+   .features .title {
+      text-align: left !important;
+   }
+
+      /* OFFER */
+
+   .offer__inner button {
+      margin-top: 1rem;
+   }
+
+   /* TESTIMONIALS */
+
+   .test__inner .item-img {
+      width: 40%;
+   }
+
+   .test__inner h2 {
+      font-size: 1.5rem !important;
+   }
+
+   .test__inner h5 {
+      font-size: 1rem;
+   }
 }
