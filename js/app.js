@@ -59,4 +59,25 @@ navbarToggler.addEventListener('click', () => {
     navbarBtn.classList.toggle('d-block');
 })
 
+    // navbar fixed 
+
+const navbar = document.querySelector('.navbar');
+
+
+
+window.addEventListener('scroll', function (e) {
+
+let navbarH = navbar.scrollHeight;
+
+    if (window.scrollY >= navbarH) {
+        navbar.classList.add('fixed-top');
+        navbar.style.marginTop = '0';
+    } else {
+        navbar.classList.remove('fixed-top');
+        navbar.style.marginTop = '10px';
+    }
+    // console.log(window.scrollY);
+    // console.log(navbarH)
+})
+
 
