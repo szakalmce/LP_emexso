@@ -70,11 +70,10 @@ window.addEventListener('scroll', function (e) {
 let navbarH = navbar.scrollHeight;
 
     if (window.scrollY >= navbarH) {
-        navbar.classList.add('fixed-top');
-        navbar.style.marginTop = '0';
+        navbar.classList.add('fixed-top2');
+
     } else {
-        navbar.classList.remove('fixed-top');
-        navbar.style.marginTop = '10px';
+        navbar.classList.remove('fixed-top2');
     }
     // console.log(window.scrollY);
     // console.log(navbarH)

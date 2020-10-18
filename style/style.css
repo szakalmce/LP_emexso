@@ -44,6 +44,23 @@ p {
    padding: 7rem 0;
 }
 
+.transition {
+   transition: all 1s ease-in-out;
+}
+
+.fixed-top2 {
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+   width: 100%;
+   transition: all .5s ease-in-out;
+   background-color: white;
+
+}
+
 :root {
    --main-color: #ff5740;
    --second-color: #fbd7b5;
@@ -173,8 +190,9 @@ p {
 }
 
 .navbar {
-   background-color: white;
-   margin-top: 10px;
+
+   padding-top: 10px;
+   transition: all .5s ease-in-out;
 }
 
 .nav-item {
