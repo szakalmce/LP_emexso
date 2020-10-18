@@ -382,26 +382,40 @@ p {
 
 .demo__inner__video__wrapper {
    position: relative;
+   background-image: url(../img/clock.jpg);
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   height: 500px;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-
-.demo__inner__video__wrapper img {
-   border-radius: 50px;
-}
-
 
 
 .video__icon {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-
    width: 100px;
    height: 100px;
    background-color: var(--main-color);
    border-radius: 50%;
    cursor: pointer;
-   animation: youtube 3s linear infinite;
+   animation: youtube 1.5s linear infinite;
+}
+
+@keyframes youtube {
+   0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 87, 64, .7)
+   }
+
+   70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 30px rgba(255, 87, 64, 0)
+   }
+   100% {
+      transform: scale(1);
+   }
 }
 
 .video__icon i {
@@ -785,6 +799,11 @@ input:focus {
 .contact__details__item__i {
    color: var(--font-color);
    font-size: 1.1rem;
+}
+
+.form-group span {
+   padding: 10px 0;
+   display: block;
 }
 
 /****** FOOTER *************************************************************************/

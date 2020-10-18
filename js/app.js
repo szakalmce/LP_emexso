@@ -79,4 +79,45 @@ let navbarH = navbar.scrollHeight;
     // console.log(navbarH)
 })
 
+// FORM VALID
+
+const form = document.querySelector('.contact__form');
+const formSpans = document.querySelectorAll('.form-group span');
+const formInputs = document.querySelectorAll('.form-group input');
+const formtextarea = document.querySelector('textarea');
+const formGroup = document.querySelectorAll('.contact__form .form-group')
+
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let validForm = false;
+
+    formGroup.forEach(function (e) {
+        let element = e.childNodes[3];
+
+        let elName = element.name;
+
+        if (element.value == '') {
+            addError(element, ' is required', elName);
+            element.nextElementSibling.style.opacity = '1';
+        } else {
+            element.nextElementSibling.style.opacity = '0';
+            validForm = true;
+        }
+    });
+
+    function addError(el, mes, n) {
+
+        let span = el.nextElementSibling;
+        span.setAttribute('style', 'color: red; font-weight: bold')
+        span.innerHTML = n.toUpperCase() + mes;
+        
+    }
+
+    if (validForm == true) {
+        console.log('elo')
+    }
+    
+});
 
