@@ -1,6 +1,8 @@
 # LP_emexso
 Landing Page using basics HTML/CSS and JS (jQuery). 
 
+Find out full project: [DEMO](https://szakalmce.github.io/LP_emexso/).
+
 
 ## Details:
 
